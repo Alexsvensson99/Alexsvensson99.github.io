@@ -1,0 +1,19 @@
+{
+  "name": "alexsvensson99.github.io",
+  "version": "1.0.0",
+  "description": "A personal website/portfolio for myself",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexsvensson99/svensson.github.io.git"
+  },
+  "author": "Alexander Svensson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexsvensson99/svensson.github.io/issues"
+  },
+  "homepage": "https://github.com/Alexsvensson99/svensson.github.io#readme"
+}
