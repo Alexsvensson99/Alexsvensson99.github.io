@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: http://www.svensson.design
+Sitemap: https://www.svensson.design/sitemap.xml
