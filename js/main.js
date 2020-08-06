@@ -1,20 +1,20 @@
-var element = document.querySelector('#months-between');
+let element = document.querySelector('#months-between');
 $("span#months-between").each(function(i){
-    var startDate = new Date($(this).data('firstdate'));
+    let startDate = new Date($(this).data('firstdate'));
 
     if ($(this).data('seconddate') == 'current') {
-    var endDate = new Date();
+    let endDate = new Date();
     } else {
-    var endDate = new Date($(this).data('seconddate'));
+    let endDate = new Date($(this).data('seconddate'));
     }
 
-    var endMoment   = moment(endDate);
-    var startMoment = moment(startDate);
+    let endMoment   = moment(endDate);
+    let startMoment = moment(startDate);
 
     if (endMoment.diff(startMoment, 'months') !== 1){
-        var month = " månader";
+        let month = " månader";
     } else {
-        var month = " månad";
+        let month = " månad";
     }
 
     console.log(endMoment.diff(startMoment, 'months'));
