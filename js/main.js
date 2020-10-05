@@ -28,7 +28,7 @@ $("span#months-between").each(function(i){
     endDate = new Date($(this).data('seconddate'));
     }
 
-    let endMoment   = moment(endDate, "YYYY-MM");
+    let endMoment   = moment(endDate, "YYYY-MM").add(1, 'M');
     let startMoment = moment(startDate, "YYYY-MM");
     let month = '';
     if (endMoment.diff(startMoment, 'months') !== 1){
