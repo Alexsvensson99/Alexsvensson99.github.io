@@ -7,11 +7,12 @@
                 let target = document.querySelector(this.hash);
                 target = target ? target : document.querySelector('[name=' + this.hash.slice(1) + ']');
                 if (target) {
+                    event.preventDefault();
                     window.scrollTo({
                         top: target.offsetTop,
                         behavior: 'smooth'
                     });
-                    return false;
+                    return;
                 }
             }
             document.querySelector('.navbar-collapse').classList.remove('show');
