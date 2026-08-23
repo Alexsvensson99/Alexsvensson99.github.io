@@ -1,19 +1,20 @@
 {
-  "name": "alexsvensson99.github.io",
-  "version": "1.0.0",
-  "description": "A personal website/portfolio for myself",
-  "main": "index.js",
+  "name": "svensson-design",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Alexander Svensson's personal CV and portfolio",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test tests/*.test.mjs",
+    "serve": "python3 -m http.server 8000"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alexsvensson99/svensson.github.io.git"
+    "url": "git+https://github.com/Alexsvensson99/Alexsvensson99.github.io.git"
   },
   "author": "Alexander Svensson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Alexsvensson99/svensson.github.io/issues"
+    "url": "https://github.com/Alexsvensson99/Alexsvensson99.github.io/issues"
   },
-  "homepage": "https://github.com/Alexsvensson99/svensson.github.io#readme"
+  "homepage": "https://www.svensson.design/"
 }
