@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "app-store-screenshots-mac",
+    "title": "How to prepare App Store screenshots on a Mac",
+    "description": "A local-first workflow for preparing, reviewing, and exporting App Store screenshot sets on a Mac with ShotLattice.",
+    "summary": "Prepare a deliberate screenshot set before App Store Connect: start with approved source captures, choose the required Apple device targets, review copy per locale, and export only after each combination is complete.",
+    "product": "shotlattice",
+    "readingMinutes": 6,
+    "sections": [
+      {
+        "id": "start-with-the-storefront",
+        "title": "Plan the screenshot story",
+        "html": "<p>App Store screenshots are release metadata. Before opening a layout tool, decide what each image needs to communicate: the first image should make the app’s main value clear, and the later images should explain one benefit or workflow at a time. Apple permits <a href=\"https://developer.apple.com/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots\">one to ten screenshots</a> and says that the first one to three may appear in search results when no app preview is available.</p><p>Collect only approved captures from the build you plan to submit. Give them stable, ordered filenames such as <code>01-home.png</code>, <code>02-plan.png</code>, and <code>03-progress.png</code>. Keep the filenames and a short intent note together outside the tool. This avoids trying to infer which screen a file represents after copy and localisation work has begun.</p><p>ShotLattice works with local PNG or JPEG source images and prepares export files locally. Make the App Store Connect upload and submission as a separate release step.</p><figure><img src=\"/tools/assets/shotlattice-cover.png\" alt=\"Three finished fictional ShotLattice screenshot exports in headline, side, and subtitle layouts\" width=\"1600\" height=\"900\" loading=\"lazy\" decoding=\"async\"><figcaption>Finished fictional screenshot exports in the three ShotLattice layouts.</figcaption></figure>"
+      },
+      {
+        "id": "confirm-apple-targets",
+        "title": "Confirm the Apple targets before choosing a preset",
+        "html": "<p>Check Apple’s current screenshot specifications for the platforms your app actually supports. Apple currently lists accepted sizes by device display and orientation, and the requirements can change. If your interface is the same across device sizes and localisations, Apple says that providing the highest required resolution can let App Store Connect scale down for smaller sizes. That is a delivery rule to verify for the specific app record, not a reason to assume that one exported image covers every platform.</p><p>ShotLattice has two portrait presets: iPhone 6.9-inch at 1320 × 2868 pixels and iPad 13-inch at 2064 × 2752 pixels. They are useful starting targets for those two portrait wells. They do <strong>not</strong> cover every iPhone, iPad, Mac, Apple Watch, Apple TV, Vision Pro, landscape, or future Apple requirement. Do not resize an arbitrary source merely to make it look like a supported preset; choose the target that matches the App Store Connect requirement you have confirmed.</p><p>If the app runs on another platform or needs a different orientation, prepare that media in the appropriate workflow. Keep a short release checklist with the device targets, orientation, screenshot count, locale, and source-build identifier. It makes a late metadata change visible before it becomes an upload problem.</p>"
+      },
+      {
+        "id": "build-and-review",
+        "title": "Build one reviewable local set",
+        "html": "<p>Open <code>START.html</code> from the downloaded ShotLattice folder. Import the finished source captures in their intended order, choose a layout, and select the portrait formats that belong to the release. The full version supports up to 20 images, up to five languages, three layouts, and the two portrait formats above. It previews every selected image × language × format combination.</p><p>Write a default headline and subtitle for each language, then inspect every combination. Use an image-specific override only when a particular screen needs different wording. ShotLattice stops export when required copy is missing or does not fit the chosen layout; shorten or rewrite the copy rather than treating overflow as a visual detail. The preview is the place to catch a title that is technically valid but no longer supports the screenshot beneath it.</p><p>Use the included fictional exports only as an example of output structure. They are not evidence that your app meets Apple’s current requirements. When the set is ready, export the PNG ZIP and inspect the manifest plus a few output files in an independent image viewer. Then upload and arrange the files in App Store Connect yourself.</p><p>For a narrow public trial, use the <a href=\"/tools/shotlattice/demo/\">limited ShotLattice demo</a>. It is intentionally restricted to one example image, one language, and one iPhone format; it is not a preview of the full batch workflow.</p>"
+      },
+      {
+        "id": "next-step",
+        "title": "Localise only after the base story is stable",
+        "html": "<p>Once the base language has a coherent story, add localised copy and review it in context. A translated sentence that fits a spreadsheet cell can still fail visually. The companion guide, <a href=\"/guides/localize-app-store-screenshots-csv/\">Localize App Store screenshots with CSV copy</a>, shows how to prepare default language rows before you add image-specific overrides.</p><p>Keep the source captures, copy file, exported archive, and submission notes together for the release. That gives the next version a controlled starting point instead of a folder of unlabelled screenshots.</p><p><a href=\"/tools/shotlattice/\">See the complete ShotLattice workflow and its supported limits.</a></p>"
+      }
+    ],
+    "downloads": [
+      {
+        "url": "/guides/assets/shotlattice-localization-template.csv",
+        "label": "Download the ShotLattice localisation CSV template"
+      },
+      {
+        "url": "/guides/assets/shotlattice-localization-template-readme.txt",
+        "label": "Read how to use the CSV template"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+        "title": "Apple: Screenshot specifications"
+      },
+      {
+        "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots",
+        "title": "Apple: Upload app previews and screenshots"
+      },
+      {
+        "url": "https://www.svensson.design/tools/shotlattice/",
+        "title": "ShotLattice product page"
+      }
+    ]
+  },
+  {
+    "slug": "localize-app-store-screenshots-csv",
+    "title": "Localize App Store screenshots with CSV copy",
+    "description": "Prepare reliable language defaults and deliberate per-screen overrides for local App Store screenshot exports with ShotLattice.",
+    "summary": "Use a simple UTF-8 CSV to keep language defaults reviewable, then add per-image overrides only after real screenshot filenames have been imported and mapped in ShotLattice.",
+    "product": "shotlattice",
+    "readingMinutes": 6,
+    "sections": [
+      {
+        "id": "separate-copy-from-captures",
+        "title": "Separate copy planning from screenshot capture",
+        "html": "<p>Localisation is easier to review when the copy plan is separate from the images, but still tied to a real screenshot order. Start with a short table outside the tool: the approved screenshot filename, the screen’s purpose, its default headline, and its default subtitle for each locale. Keep the mapping with the release rather than putting guessed filenames in a reusable template.</p><p>ShotLattice imports UTF-8 CSV copy with four required columns: <code>code</code>, <code>label</code>, <code>headline</code>, and <code>subtitle</code>. A fifth column, <code>image_id</code>, is optional and is used only for a specific image/language override. The downloadable template contains language defaults only. Its minimal shape is:</p><pre><code>code,label,headline,subtitle,image_id\nen,English,Your approved headline,Your approved supporting line,\nsv,Svenska,Er godkända rubrik,Er godkända stödtext,</code></pre><p>Download the <a href=\"/guides/assets/shotlattice-localization-template.csv\">localisation template</a> and open it in a spreadsheet or plain-text editor that preserves UTF-8 CSV. Replace the example copy with approved wording. Keep headings and subtitles concise enough to remain readable on their corresponding screen; the tool will block export if the chosen layout cannot contain the copy.</p>"
+      },
+      {
+        "id": "import-defaults-first",
+        "title": "Import default language rows first",
+        "html": "<p>A row with a blank <code>image_id</code> sets the default headline and subtitle for that language. Begin with one such row for every language you intend to ship. Language codes must be unique and use letters, for example <code>en</code>, <code>sv</code>, or a language-region form such as <code>en-GB</code>. The full version supports up to five languages.</p><p>Import your screenshots first when you are preparing a live release, then import the CSV. Review the default wording against every screen in the preview. A default row is a controlled starting point, not a claim that every screenshot needs identical copy. The benefit is that a revision to a language default is made once, rather than copied into many independent text fields.</p><p>Use real review ownership: the person responsible for the product message approves the base language, and a qualified reviewer approves each locale. ShotLattice does not translate automatically. It preserves the copy you supply, including quoted CSV values and line breaks, so do not assume that imported text has been rewritten or localised for you.</p>"
+      },
+      {
+        "id": "add-overrides-after-mapping",
+        "title": "Add overrides only with a real image mapping",
+        "html": "<p>Use an override only when the default copy does not accurately describe a particular image. An override row needs the existing image ID in <code>image_id</code>, and there must already be a default row for the same language. Each image ID/language pair can occur only once. This prevents a CSV from silently choosing between two different messages for the same screenshot.</p><p>The interface shows the filename and dimensions, but it does not display the internal image ID. Use this exact route: import the real screenshots, choose <strong>Save project</strong>, then open the downloaded <code>shotlattice-project-v1.json</code> in a text editor. In its <code>images</code> array, match each <code>name</code> to your screenshot filename and copy that object’s <code>id</code> value into the CSV <code>image_id</code> column. Keep working from that same saved project when you import the override CSV. If you replace an imported image, ShotLattice retains its existing ID, but a changed capture list still deserves a mapping review.</p><p>For each locale, preview the complete selected image × language × format set. The full version has three layouts: headline above the screenshot, text beside the screenshot, and screenshot with subtitle. It supports the iPhone 6.9-inch and iPad 13-inch portrait presets only. These are two supported export presets, not a complete App Store media matrix.</p>"
+      },
+      {
+        "id": "check-apple-and-export",
+        "title": "Check delivery requirements separately from copy",
+        "html": "<p>Before export, confirm Apple’s current device, orientation, image-format, and screenshot-count requirements for the app record. Apple accepts one to ten screenshots in JPEG, JPG, or PNG formats, and its required display sizes depend on the platforms and media wells involved. For example, the two ShotLattice portrait presets do not cover Mac, Apple Watch, Apple TV, Vision Pro, landscape variants, or every iPhone and iPad size.</p><p>When every selected preview is complete and fits, export the PNG ZIP. Inspect the output before a separate App Store Connect upload. ShotLattice has no App Store Connect upload flow, no device frames, no translation service, and no App Review guarantee. It prepares a local, reviewable image set; the release owner still chooses what to submit.</p><p>For the capture-and-export sequence, read <a href=\"/guides/app-store-screenshots-mac/\">How to prepare App Store screenshots on a Mac</a>. <a href=\"/tools/shotlattice/\">See ShotLattice’s full workflow, demo, and supported limits.</a></p>"
+      }
+    ],
+    "downloads": [
+      {
+        "url": "/guides/assets/shotlattice-localization-template.csv",
+        "label": "Download the ShotLattice localisation CSV template"
+      },
+      {
+        "url": "/guides/assets/shotlattice-localization-template-readme.txt",
+        "label": "Read how to use the CSV template"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+        "title": "Apple: Screenshot specifications"
+      },
+      {
+        "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots",
+        "title": "Apple: Upload app previews and screenshots"
+      },
+      {
+        "url": "https://www.svensson.design/tools/shotlattice/",
+        "title": "ShotLattice product page"
+      }
+    ]
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "slug": "website-handover-checklist",
+    "title": "Website Handover Checklist: What to Give a Client at Launch",
+    "description": "A practical website handover checklist for agencies and freelancers: ownership, access references, editing notes, support boundaries, open issues, and acceptance.",
+    "summary": "Use this checklist to prepare a client handover that is useful on day one and still readable when a question appears later.",
+    "product": "relayfolio",
+    "readingMinutes": 7,
+    "sections": [
+      {
+        "id": "purpose",
+        "title": "Create a handover the client can use",
+        "html": "<p>A website handover is the client-facing record of what was delivered, who owns the next decisions, and where to look before asking for help. It is most useful when it answers ordinary questions quickly: which service owns the domain, who updates event details, what is outside the agreed support period, and which open items still need a decision. A drive full of files can contain all of that information and still leave the client uncertain. The handover should select the pieces that matter to this website and explain why they matter.</p><p>Keep the editable working project separate from the package you give the client. Share references to accounts and access-request routes, never passwords, recovery codes, API keys, or private notes. The goal is a clear operating map, not a claim that the site has been audited or that every future issue is covered. For a local workflow that lets you select client sections and attachments before export, see <a href='/tools/relayfolio/'>Relayfolio</a>.</p>"
+      },
+      {
+        "id": "checklist",
+        "title": "The complete client handover checklist",
+        "html": "<h3>1. Confirm ownership and access references</h3><ul><li>Name the organisation that owns the domain, hosting, website account, analytics property, email service, and any third-party forms or payment services in scope.</li><li>For each service, provide its public sign-in or support address and the named role that can request or approve access. Do not include credentials in the handover.</li><li>State who is expected to renew each service and where renewal notices should be sent.</li><li>List any supplier relationship the client must maintain, such as a host, registrar, email provider, or print partner.</li></ul><h3>2. Record what was delivered</h3><ul><li>Give the website name, public URL, delivery date, and a short list of delivered pages or features.</li><li>Link the location of source assets the client is entitled to keep, such as approved logos, photos, copy, or a content inventory.</li><li>Describe the visible decisions that affect future edits: navigation labels, form recipients, language choices, image dimensions, or publishing workflow.</li><li>Mark third-party material and licences that the client needs to track separately.</li></ul><h3>3. Make routine editing concrete</h3><ul><li>Write short, version-neutral instructions for the tasks the client actually expects to do: edit text, replace an image, publish an event, request a change, and report a problem.</li><li>For images, state the preferred format, aspect ratio or size where known, and where the approved source image is kept. Avoid implying that any uploaded image will work everywhere.</li><li>Use one example content change to show the expected review path: draft, check the page, then publish.</li><li>Keep admin paths specific to the actual site only when they are safe and current; otherwise point to the official service documentation or the person who manages access.</li></ul><h3>4. Set support boundaries and open issues</h3><ul><li>State the support contact route, what information a useful request should include, and the date or scope of any included support.</li><li>Separate defect reports from new work. A request for a new page, integration, design direction, or copywriting decision needs its own scope.</li><li>List open items one by one with owner, next action, and a decision date where one exists.</li><li>Do not mark a website as secure, backed up, compliant, or launch-ready unless an appropriate responsible party has separately verified that claim.</li></ul><h3>5. Close with acceptance</h3><ul><li>Give the client a simple way to confirm receipt of the package and identify any missing handover item.</li><li>Record what acceptance covers: receipt of the agreed deliverables, not a promise of future outcomes or platform behaviour.</li><li>Keep the final checklist honest. Items remain unchecked until the relevant person completes them.</li></ul>"
+      },
+      {
+        "id": "package",
+        "title": "Package it for the next person",
+        "html": "<p>Before sending the handover, read it as someone who did not build the website. Can they identify what is theirs to maintain, find the correct support route, and see what remains open? Remove internal comments, working assumptions, credentials, and attachments that the client did not select. Then give the package a stable name and delivery date so it can be recognised later.</p><p>A practical package can be short: a handbook for context, a Markdown copy for easy editing, a checklist for completion status, and only the instruction images that support those notes. The free <a href='/guides/website-handover-example/'>filled fictional handover example</a> shows how these sections can read in a real package. If you prefer to start with a file, download the <a href='/guides/assets/website-handover-checklist.md'>standalone Markdown checklist</a>, adapt it to the actual site, and remove any section that does not apply.</p>"
+      }
+    ],
+    "downloads": [
+      {
+        "url": "/guides/assets/website-handover-checklist.md",
+        "label": "Download the free website handover checklist (Markdown)"
+      }
+    ],
+    "sources": [
+      {
+        "url": "/tools/relayfolio/",
+        "title": "Relayfolio — local website handover builder"
+      }
+    ]
+  },
+  {
+    "slug": "website-handover-example",
+    "title": "Website Handover Example: A Filled Client Package",
+    "description": "A detailed fictional website handover example showing roles, decisions, editing notes, support boundaries, open issues, acceptance, and the files a client receives.",
+    "summary": "See how a selected client package can describe a small website without exposing credentials, private contacts, or internal working notes.",
+    "product": "relayfolio",
+    "readingMinutes": 8,
+    "sections": [
+      {
+        "id": "fictional-context",
+        "title": "Fictional example: Harbor Loop Garden",
+        "html": "<p><strong>This is a fictional example, not a real client result.</strong> Harbor Loop Garden is an imaginary neighbourhood gardening group with a five-page public website at <code>harborloop.example.test</code>. The package is dated 18 September 2026 and covers the homepage, growing calendar, volunteer form, visit page, and contact page. It is a day-to-day editing record, not a site audit.</p><p>The client asked for a small site that lets a volunteer coordinator publish dates and seasonal updates without changing the visual structure. The project team chose one content pattern for event cards, one image ratio for feature images, and a plain contact form that sends enquiries to the organisation's shared inbox. Those are product decisions for this fictional site, not universal rules for every website.</p>"
+      },
+      {
+        "id": "roles-and-decisions",
+        "title": "Named roles and agreed decisions",
+        "html": "<h3>Roles</h3><ul><li><strong>Client owner — Garden committee:</strong> approves major content and pays for services in the organisation's name.</li><li><strong>Content editor — Volunteer coordinator:</strong> drafts and publishes calendar entries, seasonal notices, and approved photos.</li><li><strong>Domain and hosting owner — Operations contact:</strong> receives supplier notices and requests access through the relevant service's support route.</li><li><strong>Website support — Project studio:</strong> investigates reproducible defect reports from delivery through 18 October 2026. New features are quoted separately.</li></ul><h3>Decisions recorded in the package</h3><ul><li>The main navigation is Home, Calendar, Visit, Volunteer, and Contact. Adding a section needs a content and navigation decision before it is built.</li><li>Calendar entries use a title, date, short description, and one call to action. Past entries are archived rather than deleted when the committee wants to keep a record.</li><li>Feature images use the supplied landscape crop. The editor checks the page after replacing an image because different source photos can need a different crop.</li><li>The contact form forwards to the shared inbox selected by the client. Changes to recipients are handled by the access owner, not written into this handbook as credentials.</li></ul>"
+      },
+      {
+        "id": "editing-and-boundaries",
+        "title": "Editing notes and support boundary",
+        "html": "<h3>Routine editing</h3><p>To publish a calendar entry, the content editor signs in through the site's normal administration route, creates a draft using the agreed event fields, checks the public preview for date and image crop, and publishes when the committee has approved the wording. To replace a feature image, the editor uses an approved image owned by the organisation, keeps the landscape crop where possible, adds meaningful alternative text, and checks the published page. If the edit changes layout, navigation, form behaviour, or another system integration, it is a change request rather than a routine content update.</p><h3>Support boundary</h3><p>The project studio investigates reproducible defects reported between delivery on 18 September 2026 and 18 October 2026. A useful report includes the public page URL, a short description, browser and device, and a screenshot when helpful. New pages, integrations, migration work, copywriting, photography, policy decisions, and supplier-account administration are outside this example support period. After 18 October, the garden committee decides whether to request a new scoped piece of work.</p>"
+      },
+      {
+        "id": "open-issues-and-acceptance",
+        "title": "Open issues, acceptance, and client files",
+        "html": "<h3>Open issues</h3><ul><li><strong>Autumn workshop date:</strong> owner: Volunteer coordinator. Next action: supply the final date and ticket wording by 25 September 2026 before the calendar entry is published.</li><li><strong>Photo permissions:</strong> owner: Garden committee. Next action: confirm the approved gallery image list by 30 September 2026.</li><li><strong>Supplier renewal contact:</strong> owner: Operations contact. Next action: confirm the organisation inbox for supplier notices by 22 September 2026.</li></ul><p>These are open decisions, not evidence of a broken website. They remain visible in the checklist until the named role completes the next action.</p><h3>What the client receives</h3><ul><li><code>harbor-loop-handover.md</code>: the client-facing handbook with roles, delivered pages, editing notes, open issues, and support boundary.</li><li><code>harbor-loop-checklist.csv</code>: the completion list, with open and completed items kept distinct.</li><li><code>event-card-image-guide.png</code>: the selected instruction image showing the landscape crop and alternative-text reminder for calendar cards.</li><li>The selected logo file. The private project and internal comments are not part of this fictional package.</li></ul><p>The client accepts receipt by replying that the listed files arrived and naming any missing item. That acknowledgement confirms receipt of the selected package. Use the companion <a href='/guides/website-handover-checklist/'>website handover checklist</a> to build your own version, or see <a href='/tools/relayfolio/'>Relayfolio</a> for a local tool that helps select client sections and attachments before export.</p>"
+      }
+    ],
+    "downloads": [
+      {
+        "url": "/guides/assets/website-handover-example.md",
+        "label": "Download the filled fictional handover example (Markdown)"
+      }
+    ],
+    "sources": [
+      {
+        "url": "/tools/relayfolio/",
+        "title": "Relayfolio — local website handover builder"
+      }
+    ]
+  }
+]

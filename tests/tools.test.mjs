@@ -44,7 +44,8 @@ test('prices and purchase links match the six published Gumroad offers',()=>{
 test('sitemap lists every canonical route, and home and catalog link to each tool',()=>{
  const xml=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
  const urls=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
- assert.equal(new Set(urls).size,15);
+ assert.equal(new Set(urls).size,urls.length);
+ assert.ok(urls.length >= 15);
  for(const url of routes)assert.ok(urls.includes(origin+url),url);
  assert.doesNotMatch(xml,/\/demo\//);
  const home=fs.readFileSync(path.join(root,'index.html'),'utf8');

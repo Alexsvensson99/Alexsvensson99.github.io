@@ -1,3 +1,4 @@
+import {loadGuides} from './guide-data.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -5,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const products = JSON.parse(fs.readFileSync(path.join(root, 'data/tools.json'), 'utf8'));
 const origin = 'https://www.svensson.design';
+const guides = loadGuides(root);
 const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const route = (lang, slug = '') => `/${lang === 'sv' ? 'verktyg' : 'tools'}/${slug ? slug + '/' : ''}`;
 const write = (url, html) => { const file = path.join(root, url, 'index.html'); fs.mkdirSync(path.dirname(file), {recursive:true}); fs.writeFileSync(file, html); };
@@ -32,7 +34,7 @@ function head(lang, title, description, url, image, schema) {
 <link rel="icon" href="/img/favicon.ico"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/tools.css">
 <script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>
 </head><body class="tools-page"><a class="skip-link" href="#main">${lang==='sv'?'Hoppa till innehållet':'Skip to content'}</a>
-<header class="tools-header"><div class="shell"><a class="tools-brand" href="/">Svensson<span>.design</span></a><nav aria-label="${lang==='sv'?'Huvudnavigation':'Main navigation'}"><a href="${route(lang)}">${text[lang].all}</a><a href="/#contact">${text[lang].about}</a><a class="language-link" href="${alternate}" lang="${text[lang].other}" hreflang="${text[lang].other}">${text[lang].lang}</a></nav></div></header>`;
+<header class="tools-header"><div class="shell"><a class="tools-brand" href="/">Svensson<span>.design</span></a><nav aria-label="${lang==='sv'?'Huvudnavigation':'Main navigation'}"><a href="${route(lang)}">${text[lang].all}</a><a href="/guides/" lang="en">${lang==='sv'?'Guider (engelska)':'Guides'}</a><a href="/#about-tools">${text[lang].about}</a><a class="language-link" href="${alternate}" lang="${text[lang].other}" hreflang="${text[lang].other}">${text[lang].lang}</a></nav></div></header>`;
 }
 const foot = lang => `<footer class="tools-footer"><div class="shell"><p>${text[lang].footer}</p><a href="${route(lang)}">${text[lang].all}</a><a href="/">Svensson.design</a></div></footer></body></html>\n`;
 function artwork(p, lang, priority=false) {
@@ -57,11 +59,10 @@ for(const lang of ['sv','en']){
 <section class="shell product-hero"><div><p class="eyebrow">${esc(p.name)} · ${t.once}</p><h1>${esc(c.headline)}</h1><p class="tools-lead">${esc(c.intro)}</p><p class="product-price">$${p.price} <span>USD · ${t.once.toLowerCase()}</span></p><div class="tool-actions"><a class="button button-primary" href="${buyLink(p,lang,'hero')}">${t.buy} ↗</a>${p.slug==='shotlattice'?`<a class="button button-secondary" href="/tools/shotlattice/demo/">${t.demo}</a>`:''}</div><p class="purchase-note">${t.tax}</p><p class="subtle">${t.compat}<br>${t.privacy}</p></div>${artwork(p,lang,true)}</section>
 <section class="shell product-detail"><div class="detail-copy"><section><p class="eyebrow">${t.who}</p><p class="audience">${esc(c.audience)}</p></section><section><h2>${t.benefits}</h2><ul class="benefit-list">${c.benefits.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section><section><h2>${t.steps}</h2><ol class="step-list">${c.steps.map((x,i)=>`<li><span aria-hidden="true">0${i+1}</span><p>${esc(x)}</p></li>`).join('')}</ol></section>
 ${p.slug==='shotlattice'?`<section class="demo-section"><h2>${t.demo}</h2><p>${t.demoText}</p><a class="button button-primary" href="/tools/shotlattice/demo/">${t.demo} →</a><p><a href="/tools/assets/shotlattice-sample-exports.zip" download>${t.sample} (.zip)</a></p><h3>${t.watch}</h3><video controls preload="none" poster="/tools/assets/shotlattice-cover.png" width="1280" height="720"><source src="/tools/assets/shotlattice-walkthrough.mp4" type="video/mp4"><track kind="captions" src="/tools/assets/shotlattice-walkthrough-${lang}.vtt" srclang="${lang}" label="${lang==='sv'?'Svenska':'English'}" default></video><p class="subtle">${lang==='sv'?'Stegvis genomgång med verkliga bilder från den begränsade demon.':'Step-by-step walkthrough using actual captures of the limited demo.'}</p></section>`:''}
+${guides.some(g=>g.product===p.slug)?`<section class="product-guides"><h2>${lang==='sv'?'Guider och fria mallar':'Guides and free resources'}</h2><p>${lang==='sv'?'Praktiska genomgångar på engelska med exempel att använda i ditt eget arbete.':'Work through an example and take a template for your own project.'}</p><ul>${guides.filter(g=>g.product===p.slug).map(g=>`<li><a href="/guides/${g.slug}/" lang="en">${esc(g.title)}</a></li>`).join('')}</ul></section>`:''}
 <section><h2>${t.faq}</h2><div class="faq-list">${c.faq.map(f=>`<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}</div></section></div>
 <aside class="purchase-panel"><h2>${t.included}</h2><ul>${c.included.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><h2>${t.limits}</h2><ul>${c.limits.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><h2>${t.purchase}</h2><p>${t.purchaseBody}</p><p>${t.refund}</p><a class="button button-primary" href="${buyLink(p,lang,'details')}">${t.buy} · $${p.price}</a></aside></section>
 <section class="shell tool-catalog"><h2>${t.related}</h2><div class="tools-grid">${related.map(p=>card(p,lang)).join('')}</div></section></main>`+foot(lang));
  }
 }
-const urls=['/',...['sv','en'].flatMap(lang=>[route(lang),...products.map(p=>route(lang,p.slug))])];
-fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(url=>`  <url><loc>${origin}${url}</loc><lastmod>2026-09-07</lastmod></url>`).join('\n')}\n</urlset>\n`);
-console.log(`Generated ${urls.length-1} static marketing pages and sitemap.`);
+console.log('Generated 14 static product and catalog pages. Run npm run build to update all pages and sitemap.');
