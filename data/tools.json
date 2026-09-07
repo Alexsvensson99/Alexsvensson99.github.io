@@ -1,0 +1,540 @@
+[
+  {
+    "slug": "shotlattice",
+    "name": "ShotLattice",
+    "price": 29,
+    "gumroadUrl": "https://itsjustmeal3x.gumroad.com/l/shotlattice",
+    "sv": {
+      "title": "App Store-skärmbilder för Mac – ShotLattice",
+      "description": "Bygg konsekventa appbildpaket lokalt från dina bilder och din butikstext. Granska språk och format innan du exporterar en ZIP.",
+      "headline": "Förbered appens skärmbilder på flera språk.",
+      "intro": "Samla appens skärmbilder, texter och layouter i ett projekt. Förhandsgranska varje språk och format och exportera ett sammanhängande bildpaket – direkt på din Mac.",
+      "audience": "För appskapare och små team som redan har färdiga skärmbilder och vill förbereda ett konsekvent material för en butikssida.",
+      "benefits": [
+        "Arbeta med upp till 20 PNG- eller JPEG-bilder och upp till fem språk i ett projekt.",
+        "Hantera rubriker och undertexter per språk och bild via CSV.",
+        "Granska varje kombination av bild, språk och format innan export.",
+        "Spara projektet portabelt och öppna det igen när releasen behöver ändras."
+      ],
+      "steps": [
+        "Öppna START.html från den nedladdade mappen.",
+        "Lägg in skärmbilder, texter i CSV-format och välj en av de stödda layouterna.",
+        "Granska kombinationerna och exportera PNG-filerna som en ZIP."
+      ],
+      "included": [
+        "Den lokala ShotLattice-appen",
+        "Tre stödda layouter och två porträttformat: 1320×2868 och 2064×2752",
+        "PNG-ZIP-export med manifest",
+        "Snabbstart, versionsanteckningar, demo och tre fiktiva exempelprojekt"
+      ],
+      "limits": [
+        "Du ansvarar för översättning, färdiga källbilder och aktuella butikskrav. ShotLattice laddar inte upp till App Store Connect, innehåller inte Apple-enhetsramar och garanterar inte App Review. Produkten är testad lokalt på macOS i Chrome och Safari; andra system, webbläsare och mobila enheter är inte verifierade."
+      ],
+      "faq": [
+        {
+          "q": "Kan jag arbeta utan internet?",
+          "a": "Ja. Öppna START.html från den nedladdade mappen. Inget konto, ingen server och ingen molnanslutning krävs."
+        },
+        {
+          "q": "Kan jag ändra ett projekt senare?",
+          "a": "Ja. Spara det portabla projektet och öppna det igen i en kompatibel webbläsare."
+        },
+        {
+          "q": "Varför kan jag inte exportera?",
+          "a": "Varje vald kombination behöver komplett copy som ryms i layouten. Rätta den rapporterade texten eller layouten och försök igen."
+        }
+      ]
+    },
+    "en": {
+      "title": "App Store Screenshot Builder for Mac – ShotLattice",
+      "description": "Turn finished app screenshots and store copy into consistent local export sets. Review every language and format before downloading a ZIP.",
+      "headline": "Prepare your app screenshots in multiple languages.",
+      "intro": "Keep your app screenshots, copy and layouts together. Preview every language and format, then export a consistent image set directly on your Mac.",
+      "audience": "For app makers and small teams with finished screenshots who need consistent store-page assets.",
+      "benefits": [
+        "Work with up to 20 PNG or JPEG images and up to five languages in one project.",
+        "Manage image- and language-specific headlines and subtitles through CSV.",
+        "Review every image, language, and format combination before export.",
+        "Save a portable project and reopen it when the release changes."
+      ],
+      "steps": [
+        "Open START.html from the downloaded folder.",
+        "Add screenshots and CSV copy, then choose a supported layout.",
+        "Review the combinations and export the PNG files as a ZIP."
+      ],
+      "included": [
+        "The local ShotLattice app",
+        "Three supported layouts and two portrait formats: 1320×2868 and 2064×2752",
+        "PNG ZIP export with a manifest",
+        "Quick-start guide, release notes, demo material, and three fictional example projects"
+      ],
+      "limits": [
+        "You provide translations, finished source images, and confirmation of current store requirements. ShotLattice does not upload to App Store Connect, include Apple device frames, or guarantee App Review acceptance. It was tested locally on macOS in Chrome and Safari; other systems, browsers, and mobile devices are not verified."
+      ],
+      "faq": [
+        {
+          "q": "Can I work offline?",
+          "a": "Yes. Open START.html from the downloaded folder. No account, server, or cloud connection is required."
+        },
+        {
+          "q": "Can I revise a project later?",
+          "a": "Yes. Save the portable project and reopen it in a compatible browser."
+        },
+        {
+          "q": "Why is export blocked?",
+          "a": "Each selected combination needs complete copy that fits its layout. Correct the reported copy or layout, then export again."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "tendercairn",
+    "name": "TenderCairn",
+    "price": 19,
+    "gumroadUrl": "https://itsjustmeal3x.gumroad.com/l/tendercairn",
+    "sv": {
+      "title": "Offertverktyg för frilansare på Mac – TenderCairn",
+      "description": "Bygg upp till tre offertalternativ lokalt, jämför ändringar och extrajobb och exportera en kundsäker sammanfattning utan interna kalkyler.",
+      "headline": "Jämför offerter innan du bestämmer priset.",
+      "intro": "TenderCairn är ett lokalt arbetsverktyg för frilansare och designers som vill se vad olika omfattning, revisioner och tillägg innebär innan en fastprisoffert skickas.",
+      "audience": "För frilansare och designers som förbereder fasta offerter och vill skilja kundmaterial från interna beräkningar.",
+      "benefits": [
+        "Jämför upp till tre offertalternativ i samma projekt.",
+        "Modellera arbete, direkta kostnader, påslag, rabatter, moms och marginalmål med exakta decimaler.",
+        "Exportera kund-HTML och prisjämförelse-CSV utan interna timkostnader och marginaler.",
+        "Spara ett portabelt projekt och återuppta offerten lokalt."
+      ],
+      "steps": [
+        "Öppna START.html och beskriv grundomfattning, antaganden och pris.",
+        "Skapa upp till tre alternativ och jämför revisioner eller möjliga tillägg.",
+        "Exportera kundsammanfattningen när du själv har valt det slutliga offertunderlaget."
+      ],
+      "included": [
+        "Den lokala TenderCairn-appen",
+        "Engelska och svenska gränssnittsetiketter",
+        "Kund-HTML och prisjämförelse-CSV",
+        "Intern kalkyl-CSV med separat bekräftelse",
+        "Snabbstart, demo och tre fiktiva exempelprojekt"
+      ],
+      "limits": [
+        "TenderCairn ger inte automatisk prissättning och ändrar inte din offert åt dig. Den gör inte valutakonvertering och är inte ekonomisk, skatte- eller juridisk rådgivning; den skapar inte avtal, fakturor eller kopplingar till CRM, bokföring eller betalning. Kundexporter döljer interna kalkyler, så håll projekt-JSON och intern CSV privata. Testad lokalt på macOS i Chrome och Safari; andra miljöer är inte verifierade."
+      ],
+      "faq": [
+        {
+          "q": "Ändrar verktyget min offert automatiskt?",
+          "a": "Nej. Scenariojämförelser visar skillnader mot grundomfattningen. Du ändrar själv omfattning eller pris innan du skapar en ny offert."
+        },
+        {
+          "q": "Kan kunden se min marginal?",
+          "a": "Nej. Kund-HTML och pris-CSV utesluter interna kostnader och marginaler. Håll projektfilen och intern CSV privata."
+        },
+        {
+          "q": "Kan jag få en PDF?",
+          "a": "Ja. Ladda ner kund-HTML, öppna den och använd webbläsarens Skriv ut eller Spara som PDF."
+        }
+      ]
+    },
+    "en": {
+      "title": "Freelance Quote Scenario Planner for Mac – TenderCairn",
+      "description": "Build up to three local quote options, compare revisions and extra work, then export a client-safe summary without internal calculations.",
+      "headline": "Compare quote options before you commit.",
+      "intro": "TenderCairn is a local working tool for freelancers and designers who want to see how scope, revisions, and extra work affect a fixed-price proposal before sending it.",
+      "audience": "For freelancers and designers preparing fixed-price proposals who need to separate client material from internal calculations.",
+      "benefits": [
+        "Compare up to three quote options in one project.",
+        "Model work items, direct costs, markups, discounts, VAT, and target margins with exact decimals.",
+        "Export customer HTML and price-comparison CSV without internal hourly costs or margins.",
+        "Save a portable project and resume the quote locally."
+      ],
+      "steps": [
+        "Open START.html and enter the base scope, assumptions, and price.",
+        "Create up to three options and compare revisions or possible extra work.",
+        "Export the customer summary when you have chosen the final proposal."
+      ],
+      "included": [
+        "The local TenderCairn app",
+        "English and Swedish interface labels",
+        "Customer HTML and price-comparison CSV",
+        "Internal calculation CSV with separate acknowledgement",
+        "Quick-start guide, demo material, and three fictional example projects"
+      ],
+      "limits": [
+        "TenderCairn does not price work automatically or change your quote for you. It does not convert currencies and is not financial, tax, or legal advice; it does not create contracts, invoices, or CRM, accounting, or payment connections. Customer exports omit internal calculations, so keep the project JSON and internal CSV private. Tested locally on macOS in Chrome and Safari; other environments are not verified."
+      ],
+      "faq": [
+        {
+          "q": "Does it change my quote automatically?",
+          "a": "No. Scenario views compare against the base scope. You change the scope or price yourself before making a new proposal."
+        },
+        {
+          "q": "Can my client see my margin?",
+          "a": "No. Customer HTML and price CSV omit internal costs and margins. Keep the project file and internal CSV private."
+        },
+        {
+          "q": "Can I make a PDF?",
+          "a": "Yes. Download the customer HTML, open it, and use Print or Save as PDF in your browser."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "brieflattice",
+    "name": "BriefLattice",
+    "price": 29,
+    "gumroadUrl": "https://itsjustmeal3x.gumroad.com/l/brieflattice",
+    "sv": {
+      "title": "Kampanjbilder i flera format – BriefLattice för Mac",
+      "description": "Gör kampanjbilder i fyra fasta format från lokala bilder och copy. Anpassa beskärning och text, granska kontaktbladet och exportera en ZIP.",
+      "headline": "En kampanj. Bilder i fyra format.",
+      "intro": "BriefLattice låter dig lägga in lokala bilder och texter för varje variant en gång, justera varje format och sedan granska helheten före export. Det passar när produktbudskap, datum eller citat ska hållas konsekventa från kvadrat till story.",
+      "audience": "För designers och marknadsförare som behöver ett fokuserat, lokalt arbetsflöde för en mindre bildkampanj.",
+      "benefits": [
+        "Använd tre fasta layouter för produktbudskap, evenemang eller citat.",
+        "Exportera kvadrat, porträtt, story och landskap från samma kampanj.",
+        "Justera Cover eller Contain, fokuspunkt och textplacering per variant och format.",
+        "Se valda kombinationer i kontaktbladet innan en PNG- eller JPEG-ZIP skapas."
+      ],
+      "steps": [
+        "Öppna START.html och importera lokala bilder samt UTF-8 texter i CSV-format.",
+        "Välj layout och justera kompositionen för varje variant och format.",
+        "Granska kontaktbladet och exportera den ordnade ZIP-filen."
+      ],
+      "included": [
+        "Den lokala BriefLattice-appen",
+        "Tre fasta layouter: produkt, evenemang och citat",
+        "Fyra pixelformat: 1080×1080, 1080×1350, 1080×1920 och 1920×1080",
+        "PNG- eller JPEG-ZIP med manifest",
+        "Portabelt JSON-projekt, snabbstart och fiktivt exempelmaterial"
+      ],
+      "limits": [
+        "BriefLattice är inte en fri designredigerare, bild- eller copygenerator, molnlagring, publiceringsschemaläggare eller annonsplattformskoppling. Den stöder upp till 25 källbilder och 25 varianter. Export blockeras när copy inte ryms, och formatmåtten är pixelmått, inte plattformsgarantier. Testad lokalt på macOS i Chrome och Safari; andra miljöer är inte verifierade."
+      ],
+      "faq": [
+        {
+          "q": "Kan jag återanvända en kampanj?",
+          "a": "Ja. Spara det portabla JSON-projektet och öppna det igen i en kompatibel webbläsare."
+        },
+        {
+          "q": "Vad händer om texten är för lång?",
+          "a": "Den berörda kompositionen rapporteras och exporten blockeras tills du kortar texten eller justerar layouten eller placeringen."
+        },
+        {
+          "q": "Är de angivna måtten godkända av alla plattformar?",
+          "a": "Nej. De är produktens stödda pixelmått. Kontrollera alltid den aktuella plattformens egna krav."
+        }
+      ]
+    },
+    "en": {
+      "title": "Campaign Image Template Tool for Mac – BriefLattice",
+      "description": "Build campaign images in four fixed formats from local images and copy. Adjust crops and text, review the contact sheet, and export a ZIP.",
+      "headline": "One campaign. Images in four formats.",
+      "intro": "BriefLattice lets you enter local images and variant copy once, adjust each output format, and review the whole set before export. It suits product messages, event details, or quotes that need to stay consistent from square to story.",
+      "audience": "For designers and marketers who need a focused local workflow for a small image campaign.",
+      "benefits": [
+        "Use three fixed layouts for product messages, events, or quotes.",
+        "Export square, portrait, story, and landscape versions from the same campaign.",
+        "Set Cover or Contain, crop focus, and text placement per variant and format.",
+        "Review selected combinations in a contact sheet before creating a PNG or JPEG ZIP."
+      ],
+      "steps": [
+        "Open START.html and import local images plus UTF-8 CSV copy.",
+        "Choose a layout and adjust the composition for each variant and format.",
+        "Review the contact sheet and export the ordered ZIP file."
+      ],
+      "included": [
+        "The local BriefLattice app",
+        "Three fixed layouts: product, event, and quote",
+        "Four pixel formats: 1080×1080, 1080×1350, 1080×1920, and 1920×1080",
+        "PNG or JPEG ZIP export with a manifest",
+        "Portable JSON project, quick-start guide, and fictional example material"
+      ],
+      "limits": [
+        "BriefLattice is not a freeform design editor, image or copy generator, cloud storage service, publishing scheduler, or ad-platform connection. It supports up to 25 source images and 25 variants. Export is blocked when copy does not fit, and output dimensions are pixels, not platform guarantees. Tested locally on macOS in Chrome and Safari; other environments are not verified."
+      ],
+      "faq": [
+        {
+          "q": "Can I reuse a campaign?",
+          "a": "Yes. Save the portable JSON project and reopen it in a compatible browser."
+        },
+        {
+          "q": "What happens if the text is too long?",
+          "a": "The affected composition is reported and export remains blocked until you shorten the copy or adjust the layout or placement."
+        },
+        {
+          "q": "Are these dimensions approved by every platform?",
+          "a": "No. They are the product's supported pixel dimensions. Always check the current platform requirements."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "relayfolio",
+    "name": "Relayfolio",
+    "price": 19,
+    "gumroadUrl": "https://itsjustmeal3x.gumroad.com/l/relayfolio",
+    "sv": {
+      "title": "Kundhandbok för webböverlämning – Relayfolio",
+      "description": "Samla webbprojektets instruktioner, ansvar och checklistor lokalt. Välj exakt vad kunden får i ett fristående överlämningspaket.",
+      "headline": "Lämna över webbplatsen med en tydlig handbok.",
+      "intro": "Relayfolio hjälper dig att göra en tydlig kundversion av ett webbprojekt utan att blanda in interna anteckningar. Välj avsnitt, checklistpunkter och instruktioner, och exportera sedan ett lokalt paket för kundens nästa steg.",
+      "audience": "För webbdesigners och byråer som vill lämna över ansvar, öppna frågor och praktiska instruktioner i ett utvalt kundpaket.",
+      "benefits": [
+        "Samla projektöversikt, ansvar, öppna frågor, instruktioner och supportomfattning lokalt.",
+        "Välj exakt vilka avsnitt, checklistpunkter och bilagor kunden ska få.",
+        "Håll interna anteckningar och kommentarer utanför kundexporten.",
+        "Skapa ett fristående paket med handbok, Markdown, CSV och valda instruktionsbilder."
+      ],
+      "steps": [
+        "Öppna START.html och fyll i projektets kundrelevanta information.",
+        "Välj sektioner, checklistor och bilagor för kundversionen.",
+        "Exportera ZIP-paketet och öppna handboken lokalt; använd Skriv ut för en PDF vid behov."
+      ],
+      "included": [
+        "Den lokala Relayfolio-appen",
+        "Engelska och svenska gränssnitt och handboksetiketter",
+        "START-HANDBOOK.html, handoff.md, checklist.csv och CONTENTS.md i kundpaketet",
+        "Sex ursprungliga, versionsneutrala instruktionsmallar",
+        "Portabelt projekt, snabbstart och fiktiva exempel"
+      ],
+      "limits": [
+        "Relayfolio skannar eller certifierar inte webbplats, säkerhet, backup, lanseringsredo eller avtal. Den har inga fält för lösenord eller hemligheter; varningen för möjliga hemligheter är begränsad och måste kontrolleras före delning. Upp till åtta instruktionsbilder och en logotyp kan lagras, och det portabla projektet är begränsat till 40 MiB. WordPress-mallarna är versionsneutrala startpunkter, så kontrollera aktuella officiella instruktioner för webbplatsen. Testad lokalt på macOS i Chrome och Safari; andra miljöer är inte verifierade."
+      ],
+      "faq": [
+        {
+          "q": "Kan jag styra vad kunden ser?",
+          "a": "Ja. Du väljer sektioner, checklistpunkter och bilagor innan export."
+        },
+        {
+          "q": "Följer mitt privata projekt med i ZIP-filen?",
+          "a": "Nej. Det privata projektet sparas separat och ligger utanför det exporterade kundpaketet."
+        },
+        {
+          "q": "Kan jag skapa en PDF-handbok?",
+          "a": "Ja. Öppna START-HANDBOOK.html från paketet och använd Skriv ut eller Spara som PDF."
+        }
+      ]
+    },
+    "en": {
+      "title": "Website Handover Builder for Mac – Relayfolio",
+      "description": "Collect website instructions, responsibilities, and checklists locally. Choose exactly what a client receives in a standalone handover package.",
+      "headline": "Hand over a website with a clear client handbook.",
+      "intro": "Relayfolio helps you make a clear client version of a website project without mixing in internal notes. Choose sections, checklist items, and instructions, then export a local package for the client's next steps.",
+      "audience": "For web designers and agencies handing over responsibilities, open questions, and practical instructions in a selected client package.",
+      "benefits": [
+        "Collect a project overview, ownership, open questions, instructions, and support scope locally.",
+        "Choose exactly which sections, checklist items, and attachments the client receives.",
+        "Keep internal notes and comments out of the customer export.",
+        "Create a standalone package with a handbook, Markdown, CSV, and selected instruction images."
+      ],
+      "steps": [
+        "Open START.html and enter the project's client-relevant information.",
+        "Choose sections, checklists, and attachments for the client version.",
+        "Export the ZIP package and open the handbook locally; use Print when a PDF is needed."
+      ],
+      "included": [
+        "The local Relayfolio app",
+        "English and Swedish interface and handbook labels",
+        "START-HANDBOOK.html, handoff.md, checklist.csv, and CONTENTS.md in the client package",
+        "Six original, version-neutral instruction templates",
+        "Portable project, quick-start guide, and fictional examples"
+      ],
+      "limits": [
+        "Relayfolio does not scan or certify a website, security, backups, launch readiness, or an agreement. It has no password or secret fields; its possible-secret warning is limited and must be reviewed before sharing. Store up to eight instruction images and one logo, and keep the portable project within 40 MiB. The WordPress templates are version-neutral starting points, so check current official instructions for the actual site. Tested locally on macOS in Chrome and Safari; other environments are not verified."
+      ],
+      "faq": [
+        {
+          "q": "Can I control what the client sees?",
+          "a": "Yes. Select sections, checklist items, and attachments before export."
+        },
+        {
+          "q": "Is my private project included in the ZIP?",
+          "a": "No. The private project is saved separately and remains outside the exported client package."
+        },
+        {
+          "q": "Can I create a PDF handbook?",
+          "a": "Yes. Open START-HANDBOOK.html from the package and use Print or Save as PDF."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "overlayhearth",
+    "name": "OverlayHearth",
+    "price": 12,
+    "gumroadUrl": "https://itsjustmeal3x.gumroad.com/l/overlayhearth",
+    "sv": {
+      "title": "OBS-overlays för stream och workshop – OverlayHearth",
+      "description": "Bygg lokala OBS Browser Source-överlägg för agenda, talare, paus och start. Förhandsgranska och ladda ner HTML-filer för din produktion.",
+      "headline": "Förbered OBS-grafiken till nästa sändning.",
+      "intro": "OverlayHearth är en lokal konfigurator för sessionstider, talare och agendor. Den passar en workshop eller stream där du vill förbereda ett sammanhållet visuellt kit utan värdad kontrollpanel.",
+      "audience": "För streamers, workshopledare och producenter som använder OBS Browser Sources och vill konfigurera överlägg lokalt.",
+      "benefits": [
+        "Välj mellan 16 fristående överlägg för start, paus, talare och agenda.",
+        "Arbeta i Studio- eller Signal-tema med två format och transparent eller ogenomskinlig bakgrund utanför kortet.",
+        "Förhandsgranska sessionstext, deadlines och agendahöjdpunkter innan nedladdning.",
+        "Ladda ner en ersättnings-HTML eller ett komplett kit och spara projektet portabelt."
+      ],
+      "steps": [
+        "Öppna START.html, välj överlägg och format och lägg in sessionsinformationen.",
+        "Granska resultatet och ladda ner HTML-filen eller ett komplett kit.",
+        "Lägg till filen som Local file i en OBS Browser Source, ställ in matchande dimensioner och uppdatera källan efter byte."
+      ],
+      "included": [
+        "Den lokala OverlayHearth-konfiguratorn",
+        "16 överlägg, två teman och två format",
+        "Liggande 1920×1080 och stående 1080×1920",
+        "Ersättnings-HTML och komplett-kit-ZIP",
+        "Snabbstart, demo och fiktiva exempelprojekt"
+      ],
+      "limits": [
+        "OBS är den stödda produktionsdestinationen för de genererade överläggen. Verktyget har ingen livesynk, fjärrstyrning, sändningsstyrning eller plattformskoppling. En timerdeadline måste anges som absolut tid med sekunder och Z eller ±HH:MM-offset, och datorns klocka måste stämma. Testad lokalt på macOS i Chrome och Safari, med dokumenterat lokalt OBS Browser Source-flöde; andra system, streamingappar och mobila enheter är inte verifierade."
+      ],
+      "faq": [
+        {
+          "q": "Fungerar det offline?",
+          "a": "Ja. Öppna START.html från den nedladdade mappen. Inget konto, ingen server och ingen molnanslutning behövs."
+        },
+        {
+          "q": "Hur använder jag filen i OBS?",
+          "a": "Skapa en Browser Source, välj Local file, peka ut den nedladdade HTML-filen, ställ in matchande dimensioner och uppdatera efter filbyte."
+        },
+        {
+          "q": "Stoppar Static nedräkningen?",
+          "a": "Nej. Nedräkningen fortsätter att uppdateras; Static stänger bara av den dekorativa rörelsen."
+        }
+      ]
+    },
+    "en": {
+      "title": "Local OBS Overlay Kit for Mac – OverlayHearth",
+      "description": "Build local OBS Browser Source overlays for agendas, speakers, breaks, and starts. Preview and download HTML files for your production.",
+      "headline": "Prepare your OBS overlays for the next session.",
+      "intro": "OverlayHearth is a local configurator for session times, speakers, and agendas. It suits a workshop or stream that needs a coherent visual kit without a hosted dashboard.",
+      "audience": "For streamers, workshop hosts, and producers using OBS Browser Sources who want to configure overlays locally.",
+      "benefits": [
+        "Choose from 16 independent overlays for starts, breaks, speakers, and agendas.",
+        "Use Studio or Signal themes with two formats and transparent or opaque-outside-card backgrounds.",
+        "Preview session text, deadlines, and agenda highlights before download.",
+        "Download replacement HTML or a complete kit and save a portable project."
+      ],
+      "steps": [
+        "Open START.html, choose an overlay and format, and enter the session details.",
+        "Preview the result and download the HTML file or a complete kit.",
+        "Add the file as a Local file in an OBS Browser Source, set matching dimensions, and refresh the source after replacement."
+      ],
+      "included": [
+        "The local OverlayHearth configurator",
+        "16 overlays, two themes, and two formats",
+        "Landscape 1920×1080 and portrait 1080×1920",
+        "Replacement HTML and complete-kit ZIP export",
+        "Quick-start guide, demo material, and fictional example projects"
+      ],
+      "limits": [
+        "OBS is the supported production destination for generated overlays. The tool has no live sync, remote control, broadcast control, or platform connection. A timer deadline must be an absolute time with seconds and a Z or ±HH:MM offset, and your computer clock must be correct. Tested locally on macOS in Chrome and Safari, with a documented local OBS Browser Source workflow; other systems, streaming apps, and mobile devices are not verified."
+      ],
+      "faq": [
+        {
+          "q": "Does it work offline?",
+          "a": "Yes. Open START.html from the downloaded folder. No account, server, or cloud connection is needed."
+        },
+        {
+          "q": "How do I use the file in OBS?",
+          "a": "Create a Browser Source, select Local file, choose the downloaded HTML file, set matching dimensions, and refresh after replacing the file."
+        },
+        {
+          "q": "Does Static stop the countdown?",
+          "a": "No. The countdown continues to update; Static only stops decorative motion."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "captionweave",
+    "name": "CaptionWeave",
+    "price": 15,
+    "gumroadUrl": "https://itsjustmeal3x.gumroad.com/l/captionweave",
+    "sv": {
+      "title": "Granska SRT- och WebVTT-undertexter – CaptionWeave",
+      "description": "Granska befintliga SRT- och WebVTT-undertexter lokalt med fokus på timing, läsbarhet och ändringar i enskilda textblock, utan att ersätta originalet.",
+      "headline": "Granska undertexternas tider och läsbarhet.",
+      "intro": "CaptionWeave ger kreatörer och redaktörer ett lokalt granskningspass för befintliga undertextfiler. Se timing och läsbarhet, gör valda ändringar och exportera medvetet utan att verktyget skapar nya undertexter.",
+      "audience": "För kreatörer och redaktörer som redan har SRT- eller WebVTT-filer och vill granska och justera dem lokalt.",
+      "benefits": [
+        "Öppna SRT och WebVTT med upp till 5 000 textblock och 5 MiB per fil.",
+        "Granska exakta millisekundtider och justera valda textblock med offset, ombrytning eller förslag för tomma rader.",
+        "Använd redigerbara läsbarhetsprofiler som egna granskningspreferenser.",
+        "Spara portabla projekt och exportera en granskningsrapport i CSV-format med originalfilen kvar vid sidan av utkastet."
+      ],
+      "steps": [
+        "Öppna START.html och importera en befintlig SRT- eller WebVTT-fil.",
+        "Granska fynden och gör valda ändringar på textblocksnivå.",
+        "Lös negativa eller omvända tider som blockeras och exportera i avsiktligt valt format."
+      ],
+      "included": [
+        "Den lokala CaptionWeave-appen",
+        "SRT- och WebVTT-stöd med exakt millisekundtiming",
+        "Undo/redo, valda cue-offsets och redigerbara granskningsprofiler",
+        "Portabelt JSON-projekt och granskningsrapport i CSV-format-export",
+        "Snabbstart, demo och syntetiska exempel"
+      ],
+      "limits": [
+        "CaptionWeave skapar inte undertexter från ljud eller video och översätter inte. Läsbarhetsprofiler är redigerbara preferenser, inte universella standarder. Negativa eller omvända tider syns och blockerar undertextsexport tills de är lösta; upprepade undertexter slås aldrig ihop tyst. Verktyget vägrar WebVTT-till-SRT-konvertering eller ändringar som skulle förlora bevarad metadata, markup, entiteter, cue-inställningar eller okända strukturer. Testad lokalt på macOS i Chrome och Safari; andra miljöer är inte verifierade."
+      ],
+      "faq": [
+        {
+          "q": "Kan jag arbeta offline?",
+          "a": "Ja. Öppna START.html från den nedladdade mappen. Du behöver inget konto, ingen server eller Node."
+        },
+        {
+          "q": "Skapar verktyget undertexter från ljud eller video?",
+          "a": "Nej. Det granskar SRT- och WebVTT-filer som du redan har."
+        },
+        {
+          "q": "Kan varje WebVTT-fil konverteras till SRT?",
+          "a": "Nej. Verktyget förhindrar konvertering när den skulle förlora information som det bevarar."
+        }
+      ]
+    },
+    "en": {
+      "title": "SRT & WebVTT Subtitle Review for Mac – CaptionWeave",
+      "description": "Review existing SRT and WebVTT subtitles locally for timing, readability, and cue-level changes without replacing the original file.",
+      "headline": "Check subtitle timing and readability.",
+      "intro": "CaptionWeave gives creators and editors a local review pass for existing subtitle files. Inspect timing and readability, make selected edits, and export deliberately without generating new captions.",
+      "audience": "For creators and editors with existing SRT or WebVTT files who want to review and adjust them locally.",
+      "benefits": [
+        "Open SRT and WebVTT files with up to 5,000 cues and 5 MiB per file.",
+        "Review exact millisecond timing and adjust selected cues with offsets, reflow, or empty-line proposals.",
+        "Use editable readability profiles as your own review preferences.",
+        "Save portable projects and export a review CSV while keeping the source beside the current draft."
+      ],
+      "steps": [
+        "Open START.html and import an existing SRT or WebVTT file.",
+        "Review the findings and make selected cue-level changes.",
+        "Resolve negative or reversed timings that block export, then export in the format you choose."
+      ],
+      "included": [
+        "The local CaptionWeave app",
+        "SRT and WebVTT support with exact millisecond timing",
+        "Undo/redo, selected-cue offsets, and editable review profiles",
+        "Portable JSON project and review CSV export",
+        "Quick-start guide, demo material, and synthetic examples"
+      ],
+      "limits": [
+        "CaptionWeave does not create captions from audio or video and does not translate. Readability profiles are editable preferences, not universal standards. Negative or reversed timings remain visible and block subtitle export until resolved; repeated captions are never silently merged. The tool prevents WebVTT-to-SRT conversion or edits that would lose preserved metadata, markup, entities, cue settings, or unknown structures. Tested locally on macOS in Chrome and Safari; other environments are not verified."
+      ],
+      "faq": [
+        {
+          "q": "Can I work offline?",
+          "a": "Yes. Open START.html from the downloaded folder. You need no account, server, or Node."
+        },
+        {
+          "q": "Does it create captions from audio or video?",
+          "a": "No. It reviews SRT and WebVTT files you already have."
+        },
+        {
+          "q": "Can every WebVTT file be converted to SRT?",
+          "a": "No. The tool prevents a conversion when it would lose information it is preserving."
+        }
+      ]
+    }
+  }
+]

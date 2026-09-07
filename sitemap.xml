@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.svensson.design/</loc>
-    <lastmod>2026-08-23</lastmod>
-  </url>
+  <url><loc>https://www.svensson.design/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/verktyg/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/verktyg/shotlattice/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/verktyg/tendercairn/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/verktyg/brieflattice/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/verktyg/relayfolio/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/verktyg/overlayhearth/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/verktyg/captionweave/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/tools/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/tools/shotlattice/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/tools/tendercairn/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/tools/brieflattice/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/tools/relayfolio/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/tools/overlayhearth/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.svensson.design/tools/captionweave/</loc><lastmod>2026-09-07</lastmod></url>
 </urlset>
