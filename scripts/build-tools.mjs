@@ -15,7 +15,7 @@ const text = {
 
 function buyLink(p, lang, position='page') {
  const url=new URL(p.gumroadUrl);
- url.search=new URLSearchParams({utm_source:'svensson.design',utm_medium:'website',utm_campaign:'tools_launch_2026_09',utm_content:`${p.slug}_${lang}_${position}`});
+ url.search=new URLSearchParams({utm_source:'svensson-design',utm_medium:'website',utm_campaign:'tools_launch_2026_09',utm_content:`${p.slug}_${lang}_${position}`});
  return esc(url.href);
 }
 function head(lang, title, description, url, image, schema) {

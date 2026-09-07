@@ -36,7 +36,7 @@ test('prices and purchase links match the six published Gumroad offers',()=>{
   assert.equal(app.aggregateRating,undefined);assert.equal(app.review,undefined);
   const links=[...html.matchAll(/href="(https:\/\/itsjustmeal3x.gumroad.com[^\"]+)"/g)];
   assert.equal(links.length,2,slug);
-  for(const [,link] of links){const target=new URL(link.replaceAll('&amp;','&'));assert.equal(target.pathname,`/l/${slug}`);assert.equal(target.searchParams.get('utm_source'),'svensson.design');}
+  for(const [,link] of links){const target=new URL(link.replaceAll('&amp;','&'));assert.equal(target.pathname,`/l/${slug}`);assert.equal(target.searchParams.get('utm_source'),'svensson-design');}
   assert.doesNotMatch(html,/\$\$/);
  }
 });
