@@ -8,7 +8,7 @@ const origin = 'https://www.svensson.design';
 const products = JSON.parse(fs.readFileSync(path.join(root, 'data/tools.json'), 'utf8'));
 const guides = loadGuides(root);
 const external = JSON.parse(fs.readFileSync(path.join(root, 'data/external-pages.json'), 'utf8'));
-const local = ['/', ...['tools','verktyg'].flatMap(prefix => [`/${prefix}/`, ...products.map(p=>`/${prefix}/${p.slug}/`)]), '/guides/', ...guides.map(g=>`/guides/${g.slug}/`)];
+const local = ['/', '/apps/', '/apps/perfeggtion/', '/apps/bokstavsbrus/', '/guider/', '/guider/koka-agg-olika-konsistens/', '/guider/svenskt-ordspel-utan-reklam/', ...['tools','verktyg'].flatMap(prefix => [`/${prefix}/`, ...products.map(p=>`/${prefix}/${p.slug}/`)]), '/guides/', ...guides.map(g=>`/guides/${g.slug}/`)];
 for (const url of local) {
   const html = fs.readFileSync(path.join(root, url, 'index.html'), 'utf8');
   if (!html.includes(`rel="canonical" href="${origin}${url}"`) || /<meta[^>]+(?:name="robots"[^>]+content="[^"]*noindex|content="[^"]*noindex[^>]+name="robots")/i.test(html)) throw new Error(`Page is not self-canonical and indexable: ${url}`);

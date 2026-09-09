@@ -151,112 +151,11 @@
         });
     }
 
-    function setupAnalyticsConsent() {
-        var banner = document.querySelector("[data-consent-banner]");
-        var acceptButton = document.querySelector("[data-consent-accept]");
-        var rejectButton = document.querySelector("[data-consent-reject]");
-        var settingsButton = document.querySelector("[data-consent-settings]");
-        var storageKey = "svensson-analytics-consent";
-        var measurementId = "G-HT5Y0FFG8L";
-
-        if (!banner || !acceptButton || !rejectButton) {
-            return;
-        }
-
-        function readConsent() {
-            try {
-                return window.localStorage.getItem(storageKey);
-            } catch (error) {
-                return null;
-            }
-        }
-
-        function saveConsent(value) {
-            try {
-                window.localStorage.setItem(storageKey, value);
-            } catch (error) {
-                return false;
-            }
-            return true;
-        }
-
-        function openBanner() {
-            banner.hidden = false;
-        }
-
-        function closeBanner() {
-            banner.hidden = true;
-        }
-
-        function loadAnalytics() {
-            var script;
-
-            if (window.__svenssonAnalyticsLoaded) {
-                if (typeof window.gtag === "function") {
-                    window.gtag("consent", "update", { analytics_storage: "granted" });
-                }
-                return;
-            }
-
-            window.__svenssonAnalyticsLoaded = true;
-            window.dataLayer = window.dataLayer || [];
-            window.gtag = function () {
-                window.dataLayer.push(arguments);
-            };
-
-            window.gtag("consent", "default", {
-                ad_storage: "denied",
-                ad_user_data: "denied",
-                ad_personalization: "denied",
-                analytics_storage: "granted"
-            });
-            window.gtag("js", new Date());
-            window.gtag("config", measurementId, { anonymize_ip: true });
-
-            script = document.createElement("script");
-            script.async = true;
-            script.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(measurementId);
-            document.head.appendChild(script);
-        }
-
-        function denyAnalytics() {
-            if (typeof window.gtag === "function") {
-                window.gtag("consent", "update", { analytics_storage: "denied" });
-            }
-        }
-
-        acceptButton.addEventListener("click", function () {
-            saveConsent("accepted");
-            closeBanner();
-            loadAnalytics();
-        });
-
-        rejectButton.addEventListener("click", function () {
-            saveConsent("rejected");
-            closeBanner();
-            denyAnalytics();
-        });
-
-        if (settingsButton) {
-            settingsButton.addEventListener("click", function () {
-                openBanner();
-                acceptButton.focus();
-            });
-        }
-
-        if (readConsent() === "accepted") {
-            loadAnalytics();
-        } else if (readConsent() !== "rejected") {
-            openBanner();
-        }
-    }
-
     function init() {
         setupNavigation();
         setupDurations();
         setupCurrentYear();
         setupContactForm();
-        setupAnalyticsConsent();
     }
 
     if (document.readyState === "loading") {

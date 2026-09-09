@@ -1274,3 +1274,11 @@ h3 {
         text-decoration: none;
     }
 }
+
+/* Keep consent choices equally visible on both light and dark page themes. */
+.consent-actions .button-primary,
+.consent-actions .button-secondary,
+.consent-actions .button-quiet{color:var(--ink);background:var(--surface);border-color:#8b99aa}
+.consent-actions .button:hover{color:var(--ink);background:var(--surface-blue);border-color:var(--ink)}
+.apps-footer .footer-button{color:var(--ink-soft);border-color:var(--line)}
+.apps-footer .footer-button:hover{color:var(--accent)}

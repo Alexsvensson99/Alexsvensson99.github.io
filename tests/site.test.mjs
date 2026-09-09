@@ -9,6 +9,7 @@ const require = createRequire(import.meta.url);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
 const mainJs = fs.readFileSync(path.join(root, "js/main.js"), "utf8");
+const analyticsJs = fs.readFileSync(path.join(root, "js/analytics.js"), "utf8");
 const dateUtils = require(path.join(root, "js/date-utils.js"));
 
 function readJpegDimensions(buffer) {
@@ -89,8 +90,8 @@ test("privacy-sensitive structured metadata was minimized", () => {
   assert.doesNotMatch(html, /streetAddress/);
   assert.doesNotMatch(html, /birthDate/);
   assert.match(html, /data-consent-banner/);
-  assert.match(mainJs, /analytics_storage: "granted"/);
-  assert.match(mainJs, /readConsent\(\) === "accepted"/);
+  assert.ok(analyticsJs.includes("svensson-analytics-consent"));
+  assert.match(html, /src="\/js\/analytics.js" defer/);
   assert.match(html, /https:\/\/policies\.google\.com\/privacy/);
 });
 

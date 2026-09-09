@@ -20,7 +20,8 @@ test('guides are complete static articles with consistent author, dates and cano
     assert.match(html,/<html lang="en">/);
     assert.ok(html.includes(`rel="canonical" href="${origin}${route}"`));
     assert.match(html,/<meta name="robots" content="index, follow">/);
-    assert.doesNotMatch(html,/<script[^>]+src=|<form\b|<meta[^>]+noindex|hreflang="sv"|googletagmanager|google-analytics/);
+  assert.deepEqual([...html.matchAll(/<script[^>]+src="([^"]+)"/g)].map(x=>x[1]), ["/js/analytics.js"]);
+    assert.doesNotMatch(html,/<form\b|<meta[^>]+noindex|hreflang="sv"|googletagmanager|google-analytics/);
     const schema=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
     const article=schema['@graph'].find(x=>x['@type']==='Article');
     assert.equal(article.mainEntityOfPage,origin+route);
@@ -58,7 +59,7 @@ test('guide navigation, local images, downloads and fragments resolve without ex
 
 test('the single sitemap contains all local pages and reviewed project pages, with no duplicate or demo route',()=>{
   const products=JSON.parse(fs.readFileSync(path.join(root,'data/tools.json'),'utf8'));
-  const expected=['/',...['tools','verktyg'].flatMap(prefix=>[`/${prefix}/`,...products.map(p=>`/${prefix}/${p.slug}/`)]),...routes,...external].map(p=>origin+p);
+  const expected=['/',...['tools','verktyg'].flatMap(prefix=>[`/${prefix}/`,...products.map(p=>`/${prefix}/${p.slug}/`)]),...routes,'/apps/','/apps/perfeggtion/','/apps/bokstavsbrus/','/guider/','/guider/koka-agg-olika-konsistens/','/guider/svenskt-ordspel-utan-reklam/',...external].map(p=>origin+p);
   const xml=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
   const actual=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]);
   assert.deepEqual([...actual].sort(),[...expected].sort());

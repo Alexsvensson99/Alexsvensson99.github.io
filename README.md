@@ -41,4 +41,25 @@ De fyra guiderna är på engelska och har inga påhittade svenska språkvariante
 
 `scripts/build-sitemap.mjs` äger hela sitemapen. `data/external-pages.json` listar de åtta PkgLift-adresser som publiceras av det separata PkgLift-projektet på samma domän. Samtliga kontrollerades 7 september 2026: HTTP 200, självrefererande canonical, ingen noindex. Kontrollera dem igen när projektets sidstruktur ändras. Ändra PkgLifts innehåll i rätt projekt, inte i denna webbplats.
 
-Sitemapen har 28 adresser och inkluderar inga demos, resursfiler eller lokala QA-sidor. Det valfria `lastmod` utelämnas för att ett nytt bygge inte ska påstå att oförändrat innehåll har uppdaterats.
+Sitemapen har 34 adresser och inkluderar inga demos, resursfiler eller lokala QA-sidor. Det valfria `lastmod` utelämnas för att ett nytt bygge inte ska påstå att oförändrat innehåll har uppdaterats.
+
+
+## CV, appar och upptäckt
+
+Startsidan behåller CV och IT-ledarskap som central presentation. Hero-knappen leder till erfarenheten, och korta produktingångar gör det möjligt att nå apparna direkt. Erfarenhet, kompetens och bakgrund ligger samlat före de längre verktygs- och guidesektionerna.
+
+`node scripts/build-apps.mjs` genererar `/apps/`, två appsidor och `/guider/` med två svenska guider. Innehåll och verifierade App Store-bildadresser finns i `data/apps.json`; guider och mallar finns i byggaren. App Store-fakta kontrollerades 9 september 2026. Vid pris-, funktions- eller bildändring kontrolleras listningarna på nytt. Publiceringsdatum läggs inte till innan publicering faktiskt har skett.
+
+## Samtycke och mätning
+
+Alla redaktionella sidor använder `js/analytics.js`. Google Analytics laddas bara efter ett aktivt godkännande på den skarpa HTTPS-domänen. Samtycke delas mellan sidorna och kan återkallas via sidfoten. Lokala förhandsvisningar skickar ingen statistik. Query-parametrar och fragment tas bort från de sid- och referensadresser som den egna integrationen skickar. Annonssignaler är avstängda.
+
+- `page_view`: sidvisning efter godkännande.
+- `product_click`: klick till en av de åtta enskilda produktsidorna eller PkgLifts projektsida.
+- `outbound_click`: klick till en verifierad Gumroad-produkt eller en av de två App Store-apparna; parametrarna `product`, `destination` och `placement` skiljer mål och placering.
+- `demo_open`: klick för att öppna demon.
+- `demo_start`: första redigering eller klick på Load example i demon efter att statistiken godkänts. Att bara öppna eller fokusera ett fält räknas inte. Händelser före godkännande spelas inte upp i efterhand.
+
+`/prova/shotlattice/` är en noindex-sida runt den befintliga isolerade demon. Redigeraren behåller CSP-reglerna `connect-src 'none'` och `form-action 'none'`. Endast en fast startsignal skickas till föräldersidan; den innehåller inga filer, texter eller projektvärden. Föräldersidan kontrollerar både avsändarfönster och origin. Köpvägen lämnar redigerarens ram.
+
+Klick är inte köp eller installationer. Faktiska resultat följs separat i Gumroad respektive App Store Connect. Behåll befintliga Gumroad-UTM-länkar. I GA4 behöver `product`, `destination` och `placement` registreras som händelsebaserade anpassade dimensioner om de ska användas i egna rapporter. Kontots inställningar för utökad mätning och faktisk mottagning av nya händelser kontrolleras efter publicering; den lokala verifieringen gör inga ändringar i Analytics-kontot och skickar inga testbesök dit. Search Console visar senare om de nya sidorna indexeras och får sökklick; en sitemap är inte bevis på indexering.

@@ -1,0 +1,70 @@
+[
+  {
+    "slug": "perfeggtion",
+    "name": "Perfeggtion",
+    "tagline": "Äggklocka för perfekta ägg",
+    "description": "Välj den konsistens du vill ha och följ en tydlig timer, med inställningar när du behöver finjustera.",
+    "storeUrl": "https://apps.apple.com/se/app/perfeggtion/id6757096463",
+    "category": "Mat och dryck",
+    "platforms": "iPhone, iPad, Mac och Apple Watch",
+    "price": "9,00 kr",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/55/46/8b/55468b2b-c7dd-99bd-f9b0-0d1fc049d539/01-one-tap.jpg/600x1300bb.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/33/a7/70/33a770d6-4da0-13e7-c94e-78aa9e6b9066/02-yolk-choices.jpg/600x1300bb.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/ed/64/4fed6491-3929-2d7e-5a24-21f3c816542d/03-smart-batch.jpg/600x1300bb.webp"
+    ],
+    "benefits": [
+      "Välj mellan fyra utgångslägen för gulan och starta med ett tryck.",
+      "Anpassa när det behövs: äggens storlek, starttemperatur, vattenstart, kylning och höjd.",
+      "Koka olika önskemål i samma kastrull med upp till fyra grupper och en tydlig uttagsordning.",
+      "Följ en aktiv kokning på låsskärm och i Dynamic Island, eller spara en favorit för nästa gång."
+    ],
+    "steps": [
+      "Välj den konsistens som ligger närmast det du vill äta.",
+      "Lägg till detaljer bara om de skiljer sig från din vanliga rutin.",
+      "Starta timern och följ den visuella spisguiden under kokningen.",
+      "Använd resultatet som återkoppling och spara din favorit när den känns rätt för dig."
+    ],
+    "faq": [
+      ["Ger appen en universell koktid?", "Nej. Ägg, kastruller, spisar och önskad konsistens skiljer sig åt. Perfeggtion använder dina val som utgångspunkt och låter dig kalibrera efter din egen rutin."],
+      ["Kan flera personer vilja ha olika ägg?", "Ja. Smart batchkokning kan planera upp till fyra grupper med egna uttag, så att en kastrull kan rymma olika konsistensönskemål."],
+      ["Finns det reklam eller konto?", "App Store-beskrivningen anger ett engångsköp utan reklam, abonnemang, konton eller spårning."],
+      ["Vilka enheter stöds?", "Den svenska App Store-listningen anger iPhone, iPad, Mac och Apple Watch. Kontrollera alltid aktuell kompatibilitet på App Store före köp."]
+    ],
+    "guide": "/guider/koka-agg-olika-konsistens/"
+  },
+  {
+    "slug": "bokstavsbrus",
+    "name": "Bokstavsbrus",
+    "tagline": "Svenskt ordspel för alla",
+    "description": "Bygg svenska ord från ett bokstavshjul och lös sammanhängande minikorsord i din egen takt.",
+    "storeUrl": "https://apps.apple.com/se/app/bokstavsbrus/id6757083326",
+    "category": "Ordspel",
+    "platforms": "iPhone och iPad",
+    "price": "Gratis · köp inuti app",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d2/f2/65/d2f2659c-01d4-4882-43e3-31172c42382a/01-spelhubben.png/600x1300bb.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bd/59/0a/bd590a00-a86d-a258-a227-13ed89904a5a/02-minikorsord.jpg/600x1300bb.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d2/86/4c/d2864cc1-1e5b-c434-51fd-cfa199ca4b15/03-niva-klar.jpg/600x1300bb.webp"
+    ],
+    "benefits": [
+      "Bygg ord genom 700 svenska nivåer i fjorton kapitel med stigande svårighetsgrad.",
+      "Dra eller tryck mellan bokstäverna och hitta både målord och bonusord.",
+      "Spela vidare med frivilliga specialmål, daglig streak och möjlighet att spela om klara nivåer.",
+      "Behåll dina framsteg lokalt utan reklam, konto eller tracking enligt App Store-beskrivningen."
+    ],
+    "steps": [
+      "Starta en nivå och se vilka bokstäver som finns tillgängliga.",
+      "Bygg ett ord med drag eller tryck och låt det fylla i minikorsordet när det är ett målord.",
+      "Testa fler möjliga ord för bonusord, eller använd en ledtråd när du vill komma vidare.",
+      "Fortsätt i din egen takt och spela om en klar nivå om du vill förbättra resultatet."
+    ],
+    "faq": [
+      ["Är Bokstavsbrus ett svenskt ordspel?", "Ja. App Store beskriver spelet som ett ordspel där du bygger svenska ord genom nivåer och sammanhängande minikorsord."],
+      ["Måste jag skapa ett konto?", "Nej. App Store-beskrivningen säger att spelet fungerar utan konto och att framsteg sparas på enheten."],
+      ["Är spelet gratis?", "Grundspelet är gratis. App Store anger också ett valfritt köp i appen för 200 tipsmynt; aktuellt pris visas av App Store före godkännande."],
+      ["Hur många nivåer finns det?", "Den aktuella svenska App Store-listningen beskriver 700 nivåer i fjorton kapitel. Se App Store för den senaste uppgiften vid en framtida uppdatering."]
+    ],
+    "guide": "/guider/svenskt-ordspel-utan-reklam/"
+  }
+]

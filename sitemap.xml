@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.svensson.design/</loc></url>
+  <url><loc>https://www.svensson.design/apps/</loc></url>
+  <url><loc>https://www.svensson.design/apps/perfeggtion/</loc></url>
+  <url><loc>https://www.svensson.design/apps/bokstavsbrus/</loc></url>
+  <url><loc>https://www.svensson.design/guider/</loc></url>
+  <url><loc>https://www.svensson.design/guider/koka-agg-olika-konsistens/</loc></url>
+  <url><loc>https://www.svensson.design/guider/svenskt-ordspel-utan-reklam/</loc></url>
   <url><loc>https://www.svensson.design/tools/</loc></url>
   <url><loc>https://www.svensson.design/tools/shotlattice/</loc></url>
   <url><loc>https://www.svensson.design/tools/tendercairn/</loc></url>

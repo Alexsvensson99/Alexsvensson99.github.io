@@ -18,8 +18,9 @@ test('every tool page has readable static copy, one H1, self canonical and recip
   assert.ok(html.includes(`hreflang="${sv?'en':'sv'}" href="${origin}${alternate}"`),url);
   assert.ok(read(alternate).includes(`href="${origin}${url}"`),alternate);
   assert.match(html,/<meta name="robots" content="index, follow">/);
+  assert.deepEqual([...html.matchAll(/<script[^>]+src="([^"]+)"/g)].map(x=>x[1]), ["/js/analytics.js"]);
   assert.doesNotMatch(html,/<meta[^>]+noindex/);
-  assert.doesNotMatch(html,/<script[^>]+src=|<form\b|\/Users\/|sourceDir|localhost|127\.0\.0\.1/);
+  assert.doesNotMatch(html,/<form\b|\/Users\/|sourceDir|localhost|127\.0\.0\.1/);
   assert.match(html,/<meta name="description" content="[^\"]{60,220}">/);
  }
 });
