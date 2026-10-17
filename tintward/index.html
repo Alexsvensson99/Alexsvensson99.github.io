@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hjälp och kontakt för Tintward, en färgplockare för iPhone och iPad som är under utveckling.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; connect-src 'none'; img-src 'self'; style-src 'self'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Support · Tintward</title>
+  <link rel="canonical" href="https://www.svensson.design/tintward/">
+  <link rel="alternate" hreflang="sv" href="https://www.svensson.design/tintward/">
+  <link rel="alternate" hreflang="en" href="https://www.svensson.design/tintward/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.svensson.design/tintward/">
+  <link rel="icon" type="image/png" href="/tintward/assets/icon.png">
+  <link rel="stylesheet" href="/tintward/assets/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Hoppa till innehållet</a>
+  <header class="header">
+    <div class="shell header-inner">
+      <a class="brand" href="/tintward/" aria-label="Tintward support"><img src="/tintward/assets/icon.png" width="42" height="42" alt="">Tintward</a>
+      <nav class="navigation" aria-label="Huvudnavigation">
+        <a href="/tintward/" aria-current="page">Support</a>
+        <a href="/tintward/privacy/">Integritet</a>
+        <a class="language" href="/tintward/en/" hreflang="en" lang="en">English</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="shell" tabindex="-1">
+    <section class="hero" aria-labelledby="title">
+      <div><p class="eyebrow">Tintward · iPhone och iPad</p><h1 id="title">Hjälp med Tintward.</h1><p class="lead">Från en färg i en bild till ett tema för ditt gränssnitt. Här finns hjälp med färger, paletter och dina uppgifter.</p><p class="status">Under utveckling</p><p class="muted">Tintward finns ännu inte på App Store.</p></div>
+      <aside class="contact-card" aria-labelledby="contact-title"><h2 id="contact-title">Kontakta mig</h2><p>Jag heter Alexander och utvecklar Tintward. Mejla om något är oklart, om du hittar ett fel eller vill fråga om integritet.</p><a class="button" href="mailto:alex@svensson.design?subject=Tintward%20support">Mejla om Tintward</a><a class="contact-address" href="mailto:alex@svensson.design">alex@svensson.design</a></aside>
+    </section>
+    <section class="section" aria-labelledby="report-title">
+      <div class="section-head"><h2 id="report-title">Så blir det lättare att hjälpa.</h2><p>Beskriv det du försökte göra och vad som hände. Du behöver inte skicka originalbilden eller hela ditt palettbibliotek.</p></div>
+      <div class="grid">
+        <article class="info-card"><span class="step">01 · ENHET</span><h3>Modell och version</h3><p>Ange iPhone- eller iPad-modell, iOS-/iPadOS-version och appversion om du har den.</p></article>
+        <article class="info-card"><span class="step">02 · HÄNDELSE</span><h3>Stegen till problemet</h3><p>Vilken vy använde du? Vad tryckte du på? Skriv gärna av ett eventuellt felmeddelande.</p></article>
+        <article class="info-card"><span class="step">03 · EXEMPEL</span><h3>Bara det som behövs</h3><p>En färgkod eller beskuren skärmbild kan räcka. Ta bort privata uppgifter innan du skickar något.</p></article>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="faq-title"><h2 id="faq-title">Om färger och paletter</h2><div class="faq">
+      <details><summary>Varför kan en färg se annorlunda ut?</summary><div><p>Tintward använder sRGB. Bilder med andra färgprofiler, till exempel Display P3, konverteras innan färgen blir ett HEX-värde. Genomskinliga pixlar blandas mot vitt.</p><p>Skärmens inställningar, ljusstyrka och omgivningen kan påverka hur färgen ser ut. HEX-värdet beskriver färgens sRGB-kanaler.</p></div></details>
+      <details><summary>Vad betyder låst original?</summary><div><p>Originalfärgen behålls exakt i den roll som hör till användningsområdet: accent för knapp, text för text och bakgrund för bakgrund. Den rollen kan inte ändras manuellt medan originalet är låst.</p><p>Ett kontrastförslag blir inte ditt aktuella tema förrän du tillämpar det. Exporten använder det aktuella temat, inklusive manuella ändringar.</p></div></details>
+      <details><summary>Vad säger AA-markeringen?</summary><div><p>Den bedömer kontrasten för ett färgpar. Normalstor text behöver minst 4,5:1. Tintward kontrollerar text på accent, text på bakgrund och text på yta.</p><p>En godkänd kombination betyder inte att hela gränssnittet är tillgänglighetsgodkänt. Storlek, innehåll, fokusordning och andra egenskaper behöver också granskas.</p></div></details>
+      <details><summary>Hur behåller jag en palett och en säkerhetskopia?</summary><div><p>Spara paletten i biblioteket. Om du redigerar en befintlig palett behöver du spara ändringarna för att uppdatera den sparade versionen.</p><p>Bibliotekets JSON-export är avsedd för säkerhetskopiering och återimport. CSS, SwiftUI och Xcode-färgkatalogen är avsedda för kodprojekt och ersätter inte en fullständig bibliotekskopia. Kontrollera att filen verkligen har sparats innan du raderar något.</p></div></details>
+      <details><summary>En bild eller export går inte att öppna. Vad gör jag?</summary><div><p>Kontrollera att bildfilen är HEIC, JPEG eller PNG och att den finns tillgänglig på enheten. En molnlagrad fil kan behöva hämtas av systemets leverantör.</p><p>Om systemets väljare fastnar, avbryt och försök igen. Om problemet kvarstår, mejla vilken plats och filtyp du använde samt felmeddelandet. Tintward ska inte betraktas som att ha sparat en export innan sparandet har bekräftats.</p></div></details>
+    </div></section>
+    <section class="privacy-preview" aria-labelledby="privacy-title"><div><p class="eyebrow">Dina uppgifter</p><h2 id="privacy-title">Färgarbetet stannar på enheten.</h2></div><div><p>Appen har ingen inloggning, reklam eller analyskod. Originalbilder sparas inte i palettbiblioteket. Du väljer själv när något kopieras, delas eller exporteras.</p><p><a href="/tintward/privacy/">Läs hela integritetspolicyn</a></p></div></section>
+  </main>
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <div><p>Tintward · Alexander Svensson</p><p>Support och integritet. Inget konto behövs.</p></div>
+      <div class="footer-links"><a href="/tintward/">Support</a><a href="/tintward/privacy/">Integritet</a><a href="https://www.svensson.design/">Svensson Design</a></div>
+    </div>
+  </footer>
+</body>
+</html>

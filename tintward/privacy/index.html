@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Så hanterar Tintward bilder, lokala paletter, säkerhetskopior och supportmeddelanden.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; connect-src 'none'; img-src 'self'; style-src 'self'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Integritetspolicy · Tintward</title>
+  <link rel="canonical" href="https://www.svensson.design/tintward/privacy/">
+  <link rel="alternate" hreflang="sv" href="https://www.svensson.design/tintward/privacy/">
+  <link rel="alternate" hreflang="en" href="https://www.svensson.design/tintward/privacy/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.svensson.design/tintward/privacy/">
+  <link rel="icon" type="image/png" href="/tintward/assets/icon.png">
+  <link rel="stylesheet" href="/tintward/assets/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Hoppa till innehållet</a>
+  <header class="header">
+    <div class="shell header-inner">
+      <a class="brand" href="/tintward/" aria-label="Tintward support"><img src="/tintward/assets/icon.png" width="42" height="42" alt="">Tintward</a>
+      <nav class="navigation" aria-label="Huvudnavigation">
+        <a href="/tintward/">Support</a>
+        <a href="/tintward/privacy/" aria-current="page">Integritet</a>
+        <a class="language" href="/tintward/privacy/en/" hreflang="en" lang="en">English</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="shell" tabindex="-1">
+    <div class="policy-heading"><p class="eyebrow">Tintward · Dina uppgifter</p><h1>Integritetspolicy</h1><p class="lead">Ditt färgarbete stannar på enheten. Här beskriver jag vad som sparas, vad du kan dela och hur webbplatsen fungerar.</p><p class="muted">Gäller från 17 oktober 2026 · Tintward 1.0</p></div>
+    <div class="policy-layout"><nav class="contents" aria-label="På den här sidan"><p>På den här sidan</p><ol><li><a href="#ansvar">Ansvar och kontakt</a></li><li><a href="#bilder">Bilder och färger</a></li><li><a href="#bibliotek">Bibliotek och återställning</a></li><li><a href="#export">Urklipp, export och delning</a></li><li><a href="#system">Systemtjänster och molnfiler</a></li><li><a href="#radering">Radera och behålla uppgifter</a></li><li><a href="#support">När du kontaktar supporten</a></li><li><a href="#webbplats">Den här webbplatsen</a></li><li><a href="#andringar">Ändringar i policyn</a></li></ol></nav><article class="policy"><section id="ansvar" aria-labelledby="ansvar-title"><h2 id="ansvar-title">Ansvar och kontakt</h2><p>Tintward utvecklas av Alexander Svensson. Du kan kontakta mig om appen, den här policyn eller uppgifter du har skickat till supporten på <a href="mailto:alex@svensson.design">alex@svensson.design</a>.</p><p>Den här policyn beskriver Tintward 1.0 för iPhone och iPad samt denna supportwebbplats. Appen är under utveckling och är ännu inte publicerad på App Store.</p></section>
+<section id="bilder" aria-labelledby="bilder-title"><h2 id="bilder-title">Bilder och färger</h2><p>Du väljer själv vilka bilder och filer Tintward får öppna genom systemets väljare. Bilder behandlas på din enhet och deras färger omvandlas lokalt till sRGB. Originalbilden sparas inte i palettbiblioteket. Den visade bilden och det valda filnamnet hålls i minnet under användningen.</p><p>Appen skickar inte dina bilder, färger eller palettnamn till mig. Den har ingen inloggning, reklam, analysfunktion, spårning eller egen nätverkstjänst.</p></section>
+<section id="bibliotek" aria-labelledby="bibliotek-title"><h2 id="bibliotek-title">Bibliotek och återställning</h2><p>Palettbiblioteket sparas i appens lokala lagring. Det innehåller palettnamn, färgvärden för ljust och mörkt läge, datum, lokala palettidentifierare och inställningar för originalfärg, lås, användningsområde och manuella ändringar. Identifierarna hör till paletterna, inte till personer eller enheter.</p><p>Den senast giltiga biblioteksfilen sparas som en tidigare version för återställning. Vid en uttrycklig återställning från säkerhetskopia bevaras även den ersatta filen som en separat lokal återställningskopia. Sådana återställningskopior raderas inte automatiskt.</p><p>En raderad palett tas bort ur det aktuella biblioteket men kan finnas kvar tillfälligt i ångra-funktionen, i tidigare biblioteks- och återställningskopior samt i exporterade säkerhetskopior.</p></section>
+<section id="export" aria-labelledby="export-title"><h2 id="export-title">Urklipp, export och delning</h2><p>Tintward skriver en HEX-kod eller exportdata till urklipp när du väljer Kopiera. Appen läser inte urklipp i bakgrunden. Andra appar och systemets urklippsfunktioner hanterar sedan innehållet enligt enhetens inställningar.</p><p>CSS, SwiftUI och Xcode-exporter innehåller temats färger. JSON-säkerhetskopior innehåller även palettnamn och biblioteksuppgifter. Export och delning startas av dig. Innehållet hanteras därefter av den plats, app eller tjänst du väljer.</p><p>Delning skapar en tillfällig fil i appen. Den senaste filen per exportformat kan finnas kvar tills den ersätts, systemet städar tillfälliga filer eller appen raderas. Exporterade säkerhetskopior är läsbara JSON-filer, inte krypterade arkiv skapade av Tintward.</p></section>
+<section id="system" aria-labelledby="system-title"><h2 id="system-title">Systemtjänster och molnfiler</h2><p>Tintward har ingen egen molnsynkronisering. Om du väljer en bild eller fil i en molntjänst kan Bilder eller systemets filleverantör behöva hämta den. Det följer den tjänstens villkor och dina inställningar.</p><p>Enhetens säkerhetskopiering kan innehålla appdata. Apples systemdiagnostik, App Store och de tjänster du väljer för delning hanterar uppgifter enligt sina egna villkor. Tintward har ingen egen tjänst för kraschrapportering eller betalningshantering.</p></section>
+<section id="radering" aria-labelledby="radering-title"><h2 id="radering-title">Radera och behålla uppgifter</h2><p>Du kan radera paletter i biblioteket. För att ta bort appens lokala bibliotek, återställningskopior och tillfälliga filer kan du radera appen via iOS eller iPadOS. Att avlasta appen är inte samma sak som att radera dess data. Spara en egen säkerhetskopia först om du vill behålla paletterna.</p><p>Filer som du redan har exporterat till andra platser och tidigare systemsäkerhetskopior tas inte bort när appen raderas. Du hanterar dem på respektive plats. Lokalt skydd kommer från enhetens och appens lagringsskydd; Tintward erbjuder inget eget lösenord för säkerhetskopior.</p></section>
+<section id="support" aria-labelledby="support-title"><h2 id="support-title">När du kontaktar supporten</h2><p>Om du mejlar mig lämnar du din e-postadress, meddelandets innehåll och eventuella bilagor till min e-posttjänst. Jag använder det du skickar för att förstå och besvara ditt ärende. Detta är separat från appens lokala färghantering.</p><p>Skicka bara det som behövs och undvik känsliga uppgifter. Du kan använda samma kontaktadress om du vill fråga om, rätta eller begära radering av supportuppgifter. Skicka inte ditt bildbibliotek eller hela dina paletter om en färgkod eller beskrivning räcker.</p></section>
+<section id="webbplats" aria-labelledby="webbplats-title"><h2 id="webbplats-title">Den här webbplatsen</h2><p>Dessa Tintward-sidor använder inga analysverktyg, externa typsnitt, formulär eller JavaScript och sätter inga egna cookies. Andra delar av svensson.design kan ha andra funktioner och egna val för statistik.</p><p>Webbplatsen ligger på GitHub Pages. GitHub loggar och sparar besökares IP-adresser för säkerhetsändamål, även när besökaren inte är inloggad på GitHub. Det är webbhotellets hantering av ett sidbesök, inte datainsamling i Tintward-appen.</p><p>Läs <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubs integritetspolicy</a> och <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHubs information om Pages och besöksuppgifter</a>.</p></section>
+<section id="andringar" aria-labelledby="andringar-title"><h2 id="andringar-title">Ändringar i policyn</h2><p>Om hur Tintward eller denna webbplats hanterar uppgifter ändras uppdateras texten och datumet på den här sidan. Kontakta mig om något är oklart.</p></section></article></div>
+  </main>
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <div><p>Tintward · Alexander Svensson</p><p>Support och integritet. Inget konto behövs.</p></div>
+      <div class="footer-links"><a href="/tintward/">Support</a><a href="/tintward/privacy/">Integritet</a><a href="https://www.svensson.design/">Svensson Design</a></div>
+    </div>
+  </footer>
+</body>
+</html>
